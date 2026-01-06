@@ -1,0 +1,477 @@
+/* 🔒 FIXED CANVAS — SAME ON ALL SCREENS */
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(120deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
+  background-size: 600% 600%;
+  animation: bgShift 20s infinite alternate;
+}
+
+/* 🎨 MAIN FIXED LAYOUT */
+.canvas {
+  width: 1366px;
+  /* height: 3000px; */
+  position: relative;
+  overflow: hidden;
+  background: transparent;
+}
+
+@keyframes bgShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.tag-right {
+  position: relative;
+  left: 1000px;
+  bottom: 400px;
+}
+.happy {
+  position: relative;
+  left: 340px;
+  bottom: 200px;
+}
+.birthday-flag {
+  position: relative;
+  left: 612px;
+  bottom: 265px;
+}
+
+.box2 {
+  display: inline;
+  position: relative;
+}
+
+#heart {
+  font-size: 400px;
+  color: red;
+  position: relative;
+  top: -970px;
+  left: 430px;
+  animation: beat 1s infinite;
+  /* background-image: url(HBD.jpeg);
+  height: 300px;
+  width: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center; */
+}
+#heart img {
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes beat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.balloon {
+  position: relative;
+  bottom: 400px;
+}
+.balloon-right {
+  position: relative;
+  top: -970px;
+  float: right;
+}
+
+.wish {
+  padding: 20px;
+  width: 80%;
+  margin: auto;
+  background-color: bisque;
+  color: brown;
+  font-weight: bold;
+  border-radius: 15px;
+  position: relative;
+  bottom: 900px;
+  text-align: center;
+  border: 2px dotted blue;
+}
+.box3 {
+  display: inline;
+}
+.text1 {
+  padding: 20px;
+  position: relative;
+  top: -870px;
+
+  /* bottom: 1000px; */
+  font-weight: bold;
+  color: black;
+  width: 400px;
+}
+
+.cake {
+  position: relative;
+  top: -1200px;
+  left: 500px;
+}
+.cake img {
+  height: 500px;
+}
+.candles-wrap {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  bottom: 1100px;
+  left: -5px;
+}
+
+.candle {
+  width: 18px;
+  height: 70px;
+  background: repeating-linear-gradient(
+    45deg,
+    #fff,
+    #fff 6px,
+    #ff80ab 6px,
+    #ff80ab 12px
+  );
+  border-radius: 10px;
+  position: relative;
+}
+
+.wick {
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  width: 2px;
+  height: 8px;
+  background: #111;
+  transform: translateX(-50%);
+}
+
+.flame {
+  position: absolute;
+  top: -28px;
+  left: 50%;
+  width: 18px;
+  height: 26px;
+  transform: translateX(-50%);
+  background: radial-gradient(circle, #fff700, #ff9800, #ff5722);
+  border-radius: 50%;
+  animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+  50% {
+    transform: translateX(-50%) scale(1.2);
+  }
+}
+
+.smoke {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  transform: translateX(-50%);
+  background: rgba(200, 200, 200, 0.6);
+  border-radius: 50%;
+  opacity: 0;
+  animation: smoke 2s forwards;
+}
+
+@keyframes smoke {
+  to {
+    transform: translate(-50%, -70px) scale(2);
+    opacity: 0;
+  }
+}
+
+.off {
+  opacity: 0;
+}
+.text2 {
+  float: right;
+  padding: 20px;
+  position: relative;
+  top: -1750px;
+  font-weight: bold;
+  color: black;
+  width: 400px;
+}
+
+.box4 {
+  margin-top: 40px;
+}
+
+.dabba {
+  height: 220px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.dabba {
+  display: inline;
+  border: 2px solid white;
+  padding: 50px;
+  position: relative;
+  bottom: 1500px;
+  border-radius: 15px;
+  animation: bounceBox 2s ease-in-out infinite alternate;
+  animation: glow 2s infinite alternate;
+  border-radius: 15px;
+}
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 10px yellow;
+  }
+  100% {
+    box-shadow: 0 0 30px orange;
+  }
+}
+@keyframes bounceBox {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+.photos {
+  position: relative;
+}
+.songs {
+  float: right;
+  position: relative;
+}
+
+/* 📦 Main Card */
+.player {
+  width: 360px;
+  margin: 40px auto;
+  padding: 24px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffe5ec, #fff0f6);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  position: relative;
+  bottom: 1470px;
+  float: right;
+}
+
+/* 🎈 Small decorative emojis */
+.decor {
+  position: absolute;
+  font-size: 20px;
+  opacity: 0.7;
+  animation: float 4s ease-in-out infinite;
+}
+
+.decor.one {
+  top: 10px;
+  left: 20px;
+}
+.decor.two {
+  top: 20px;
+  right: 25px;
+  animation-duration: 3s;
+}
+.decor.three {
+  bottom: 20px;
+  left: 30px;
+  animation-duration: 5s;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+h2 {
+  margin-bottom: 5px;
+  color: #6a0572;
+}
+
+p {
+  font-size: 13px;
+  color: #555;
+}
+
+/* 🎧 Disc */
+.disc {
+  width: 170px;
+  height: 170px;
+  margin: 15px auto;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 75px;
+  animation: spin 6s linear infinite;
+  animation-play-state: paused;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#songName {
+  font-weight: bold;
+  color: #3c096c;
+  margin-bottom: 10px;
+}
+
+/* 🎮 Controls */
+.controls button {
+  font-size: 20px;
+  margin: 8px;
+  padding: 12px;
+  border: none;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.controls button:hover {
+  background: #ffe5ec;
+}
+
+.playlist {
+  color: black;
+  text-align: left;
+}
+
+/* === CONFETTI === */
+.confetti {
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: gold;
+  top: -10px;
+  left: 50%;
+  opacity: 0.8;
+  animation: confettiFall 5s linear infinite;
+}
+@keyframes confettiFall {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-200px) translateY(600px) rotate(360deg);
+  }
+}
+
+.book,
+.player {
+  animation: softGlow 3s infinite alternate;
+}
+
+@keyframes softGlow {
+  from {
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.6);
+  }
+  to {
+    box-shadow: 0 0 40px rgba(255, 105, 180, 0.9);
+  }
+}
+
+.balloon img,
+.balloon-right img {
+  animation: balloonFloat 4s ease-in-out infinite;
+}
+
+@keyframes balloonFloat {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-25px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+  position: relative;
+  bottom: 1430px;
+  animation: grid 2s infinite alternate;
+  border-radius: 2px;
+}
+@keyframes grid {
+  0% {
+    box-shadow: 0 0 10px rgb(255, 0, 76);
+  }
+  100% {
+    box-shadow: 0 0 30px rgb(255, 0, 128);
+  }
+}
+
+.grid-item {
+  height: 220px;
+  border-radius: 16px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.grid-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.7)
+  );
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.grid-text {
+  position: absolute;
+  bottom: 15px;
+  left: 25px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 1;
+}
