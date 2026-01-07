@@ -5,16 +5,23 @@
 
   .wish {
     font-size: 14px;
+    width: auto;
   }
 
   #heart {
-    width: 200px;
+    width: auto;
     height: 220px;
   }
 
+
   .balloon img {
-    width: 80px;
+    width: auto;
   }
+  .canvas {
+  width: 100%;
+  max-width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 /* Tablets */
