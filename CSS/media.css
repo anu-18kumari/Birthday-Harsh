@@ -1,0 +1,175 @@
+/* 📱 MOBILE BIRTHDAY CARD LAYOUT */
+@media (max-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+
+  body {
+    background: linear-gradient(180deg, #ffdde1, #ee9ca7);
+  }
+
+  /* Main wrapper */
+  .canvas {
+    width: 100%;
+    padding: 20px 12px 40px;
+  }
+
+  /* 🎉 Happy Birthday text
+ .happy {
+  position: relative;
+}
+.birthday-flag {
+  position: relative;
+  left: 612px;
+  bottom: 265px;
+} */
+  .happy {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+    position: relative;
+  }
+
+  .birthday-flag {
+    margin-top: 6px;
+    padding: 10px 22px;
+    background: linear-gradient(135deg, #ff4d6d, #ff8fab);
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 25px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  }
+
+  #heart {
+    font-size: 180px;
+    text-align: center;
+    animation: beat 1s infinite;
+    filter: drop-shadow(0 0 20px rgba(255, 0, 0, 0.6));
+  }
+
+  /* 🎈 Balloons under heart */
+
+  /* .balloon{position: relative;
+    display: inline;
+    left: -80px;}
+    .balloon-right{position: relative;
+      display: inline;
+    left: 70px;
+  top: -1000px;}
+
+  .balloon img,
+  .balloon-right img {
+    width: 110px;
+    /* margin: 0 6px; */
+
+  .balloon-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+  }
+
+  .balloon img,
+  .balloon-right img {
+    width: 110px;
+    animation: balloonFloat 4s ease-in-out infinite;
+  }
+
+  @keyframes balloonFloat {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .wish {
+    width: 85%;
+    margin: 20px auto;
+    padding: 14px;
+    background: bisque;
+    color: brown;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 16px;
+    border: 2px dotted blue;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .text1,
+  .text2 {
+    width: 92%;
+    margin: 20px auto;
+    padding: 16px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 18px;
+    font-size: 15px;
+    color: #333;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .cake {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .cake img {
+    width: 85%;
+    max-width: 320px;
+    height: auto;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  }
+
+  /* 🎵 Music player */
+  .player {
+    width: 92%;
+    margin: 30px auto;
+    padding: 22px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #ffe5ec, #fff0f6);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  /* 🖼️ Photo grid */
+  .grid-container {
+    width: 95%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .grid-item {
+    height: 220px;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+  }
+
+  .grid-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  }
+
+  /* 🎊 Floating decoration */
+  .canvas::after {
+    content: "🎉 🎈 💖 ✨";
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    margin-top: 30px;
+    opacity: 0.8;
+  }
+}

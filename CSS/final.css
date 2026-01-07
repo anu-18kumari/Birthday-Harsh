@@ -50,18 +50,16 @@ body {
 }
 
 #heart {
-  font-size: 400px;
-  color: red;
   position: relative;
   top: -970px;
   left: 430px;
-  animation: beat 1s infinite;
-  /* background-image: url(HBD.jpeg);
-  height: 300px;
-  width: 400px;
+  animation: beat 3s infinite;
+  background-image: url(HBD.jpeg);
+  height: 500px;
+  width: 470px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center; */
+  background-position: center;
 }
 #heart img {
   background-size: contain;
@@ -85,7 +83,7 @@ body {
 }
 .balloon-right {
   position: relative;
-  top: -970px;
+  bottom: 1470px;
   float: right;
 }
 
@@ -131,7 +129,7 @@ body {
   align-items: center;
   position: relative;
   bottom: 1100px;
-  left: -5px;
+  left: 195px;
 }
 
 .candle {
@@ -440,7 +438,7 @@ p {
 }
 
 .grid-item {
-  height: 220px;
+  height: 300px;
   border-radius: 16px;
   background-size: cover;
   background-position: center;
@@ -475,3 +473,9 @@ p {
   font-weight: bold;
   z-index: 1;
 }
+.last{position: relative;
+float: right;
+    top: -1760px;
+  left: -40px;
+animation: grid 2s infinite alternate;
+  border-radius: 2px;}
